@@ -8,12 +8,6 @@ file_path = "D:\\final\\thumb"
 # file_path = "1.TIF"
 
 
-# collection=io.imread_collection(file_path)
-# # # print(len(collection))
-# i=0
-# for i in range(100):
-#     image=cv2.imread(file_path)
-#     io.imshow(image)
 str=file_path + '/*.png'
 coll = io.ImageCollection(str)
 print(len(coll))
