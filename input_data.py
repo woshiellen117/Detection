@@ -7,9 +7,6 @@ import tensorflow as tf
 file_path = "D:\\final\\try_100"
 # file_path = "1.TIF"
 
-# #
-# image=cv2.imread(file_path)
-# io.imshow(image)
 
 # collection=io.imread_collection(file_path)
 # # # print(len(collection))
