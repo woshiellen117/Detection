@@ -28,11 +28,10 @@ with tf.Session() as session:
     x = tf.transpose(x,perm=[1,0])
     session.run(model)
     result = session.run(x)
-image=cv2.resize(coll[10000],(400*400))
 cv2.namedWindow('image',0)
 cv2.imshow('image',coll[10000])
 cv2.waitKey(0)
 
-image=cv2.resize(coll[10000],(400*400))
+image=cv2.resize(coll[10000],(400,400),interpolation=cv2.INTER_CUBIC)
 cv2.imshow('image',image)
 cv2.waitKey(0)
